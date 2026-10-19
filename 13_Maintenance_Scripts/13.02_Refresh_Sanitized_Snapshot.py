@@ -110,7 +110,7 @@ for table in ("provider_connections","api_keys","combos","call_logs","compressio
 snapshot = {
     "about":"Allowlisted, sanitized local OmniRoute configuration; NO credentials, IDs or private connection names",
     "generated_utc":NOW.isoformat(timespec="seconds"),
-    "omniroute_installed_version":"3.8.50 (check manually after software updates)",
+    "omniroute_installed_version": json.loads((Path(os.environ["APPDATA"])/"npm/node_modules/omniroute/package.json").read_text(encoding="utf-8")).get("version","unknown"),
     "database_location":"E: active DATA_DIR (absolute local path omitted)",
     "counts":counts,
     "settings":settings,

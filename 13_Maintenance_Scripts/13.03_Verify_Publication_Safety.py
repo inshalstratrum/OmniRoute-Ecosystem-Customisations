@@ -32,7 +32,7 @@ for rel in required:
 
 allowed={"README.md",".gitignore"}
 serial_folder=re.compile(r"^[0-9]{2}_[A-Za-z0-9_]+$")
-serial_filename=re.compile(r"^[0-9]{2}\.[0-9]{2}_[A-Za-z0-9_]+(?:\.local)?\.(?:md|json|py|js|mjs|html)$")
+serial_filename=re.compile(r"^[0-9]{2}\.[0-9]{2}_[A-Za-z0-9_.]+(?:\.local)?\.(?:md|json|py|js|mjs|html)$")
 token_like=re.compile(r"(?i)(?<![A-Za-z0-9])(?:sk-|or-v1-|ghp_|hf_)[A-Za-z0-9_-]{18,}")
 email_like=re.compile(r"(?i)\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b")
 machine_path=re.compile(r"(?i)(?:C:\\Users\\[^\\\s]+|E:\\Master Synced Dir\\)")
@@ -43,7 +43,7 @@ for file in ROOT.rglob("*"):
  if not file.is_file():
   continue
  rel=file.relative_to(ROOT)
- if "__pycache__" in rel.parts or file.suffix==".pyc":
+ if ".git" in rel.parts or "__pycache__" in rel.parts or file.suffix==".pyc":
   continue
  if len(rel.parts)==1:
   if file.name not in allowed:
