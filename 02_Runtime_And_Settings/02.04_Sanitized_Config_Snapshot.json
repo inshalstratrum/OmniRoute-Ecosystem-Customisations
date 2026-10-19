@@ -1,0 +1,494 @@
+{
+  "about": "Allowlisted, sanitized local OmniRoute configuration; NO credentials, IDs or private connection names",
+  "generated_utc": "2026-10-19T11:13:16+00:00",
+  "omniroute_installed_version": "3.8.50 (check manually after software updates)",
+  "database_location": "E: active DATA_DIR (absolute local path omitted)",
+  "counts": {
+    "provider_connections": 13,
+    "api_keys": 5,
+    "combos": 7,
+    "call_logs": 6688,
+    "compression_combos": 1,
+    "auto_candidate_overrides": 0
+  },
+  "settings": {
+    "hidePaidModels": true,
+    "freeAccessPolicy": "strict",
+    "credentialRedactionEnabled": true,
+    "requestRetry": 2,
+    "maxRetryIntervalSec": 30,
+    "autoRefreshProviderQuota": true,
+    "autoRefreshProviderQuotaInterval": 120,
+    "excludeTosAvoid": true,
+    "quotaPreflight": {
+      "enabled": true,
+      "defaultThresholdPercent": 2,
+      "warnThresholdPercent": 20
+    },
+    "comboStrategy": "fallback",
+    "requireLogin": true,
+    "logToolSources": true,
+    "call_log_pipeline_enabled": 0,
+    "alwaysPreserveClientCache": "auto",
+    "promptCacheAffinityEnabled": true
+  },
+  "compression": {
+    "enabled": true,
+    "defaultMode": "stacked",
+    "stackedPipeline": [
+      {
+        "engine": "session-dedup"
+      },
+      {
+        "engine": "lite",
+        "intensity": "lite"
+      }
+    ],
+    "preserveSystemPrompt": true,
+    "preserveSystemPromptMode": "always",
+    "cacheMinutes": 15,
+    "mcpAccessibility": {
+      "enabled": true,
+      "maxTextChars": 50000,
+      "collapseThreshold": 30,
+      "collapseKeepHead": 10,
+      "collapseKeepTail": 5,
+      "minLengthToProcess": 2000
+    },
+    "mcpDescriptionCompressionEnabled": true,
+    "activeComboId": null
+  },
+  "feature_flags": {
+    "ALLOW_API_KEY_REVEAL": "true"
+  },
+  "provider_types": {
+    "agy": 1,
+    "antigravity": 1,
+    "cloudflare-ai": 2,
+    "gemini": 3,
+    "groq": 1,
+    "huggingchat": 1,
+    "nvidia": 1,
+    "openrouter": 2,
+    "sambanova": 1
+  },
+  "provider_connections": [
+    {
+      "provider": "agy",
+      "is_active": 1,
+      "test_status": "active",
+      "last_error_type": null,
+      "priority": 1,
+      "max_concurrent": null,
+      "quota_visible": 1,
+      "rate_limit_protection": 1,
+      "health_check_interval": null,
+      "index_within_provider": 1
+    },
+    {
+      "provider": "antigravity",
+      "is_active": 1,
+      "test_status": "active",
+      "last_error_type": null,
+      "priority": 1,
+      "max_concurrent": null,
+      "quota_visible": 1,
+      "rate_limit_protection": 1,
+      "health_check_interval": null,
+      "index_within_provider": 1
+    },
+    {
+      "provider": "cloudflare-ai",
+      "is_active": 1,
+      "test_status": "active",
+      "last_error_type": null,
+      "priority": 1,
+      "max_concurrent": null,
+      "quota_visible": 1,
+      "rate_limit_protection": 1,
+      "health_check_interval": null,
+      "index_within_provider": 1
+    },
+    {
+      "provider": "cloudflare-ai",
+      "is_active": 1,
+      "test_status": "active",
+      "last_error_type": null,
+      "priority": 1,
+      "max_concurrent": null,
+      "quota_visible": 1,
+      "rate_limit_protection": 1,
+      "health_check_interval": null,
+      "index_within_provider": 2
+    },
+    {
+      "provider": "gemini",
+      "is_active": 1,
+      "test_status": "active",
+      "last_error_type": null,
+      "priority": 1,
+      "max_concurrent": null,
+      "quota_visible": 1,
+      "rate_limit_protection": 1,
+      "health_check_interval": null,
+      "index_within_provider": 1
+    },
+    {
+      "provider": "gemini",
+      "is_active": 1,
+      "test_status": "active",
+      "last_error_type": null,
+      "priority": 1,
+      "max_concurrent": null,
+      "quota_visible": 1,
+      "rate_limit_protection": 1,
+      "health_check_interval": null,
+      "index_within_provider": 2
+    },
+    {
+      "provider": "gemini",
+      "is_active": 1,
+      "test_status": "active",
+      "last_error_type": null,
+      "priority": 1,
+      "max_concurrent": null,
+      "quota_visible": 1,
+      "rate_limit_protection": 1,
+      "health_check_interval": 60,
+      "index_within_provider": 3
+    },
+    {
+      "provider": "groq",
+      "is_active": 1,
+      "test_status": "active",
+      "last_error_type": null,
+      "priority": 1,
+      "max_concurrent": null,
+      "quota_visible": 1,
+      "rate_limit_protection": 1,
+      "health_check_interval": 60,
+      "index_within_provider": 1
+    },
+    {
+      "provider": "huggingchat",
+      "is_active": 1,
+      "test_status": "active",
+      "last_error_type": "server_error",
+      "priority": 1,
+      "max_concurrent": null,
+      "quota_visible": 1,
+      "rate_limit_protection": 1,
+      "health_check_interval": 60,
+      "index_within_provider": 1
+    },
+    {
+      "provider": "nvidia",
+      "is_active": 1,
+      "test_status": "active",
+      "last_error_type": null,
+      "priority": 1,
+      "max_concurrent": 1,
+      "quota_visible": 1,
+      "rate_limit_protection": 1,
+      "health_check_interval": null,
+      "index_within_provider": 1
+    },
+    {
+      "provider": "openrouter",
+      "is_active": 1,
+      "test_status": "active",
+      "last_error_type": null,
+      "priority": 1,
+      "max_concurrent": null,
+      "quota_visible": 1,
+      "rate_limit_protection": 1,
+      "health_check_interval": null,
+      "index_within_provider": 1
+    },
+    {
+      "provider": "openrouter",
+      "is_active": 1,
+      "test_status": "active",
+      "last_error_type": null,
+      "priority": 1,
+      "max_concurrent": null,
+      "quota_visible": 1,
+      "rate_limit_protection": 1,
+      "health_check_interval": null,
+      "index_within_provider": 2
+    },
+    {
+      "provider": "sambanova",
+      "is_active": 1,
+      "test_status": "active",
+      "last_error_type": null,
+      "priority": 1,
+      "max_concurrent": null,
+      "quota_visible": 1,
+      "rate_limit_protection": 1,
+      "health_check_interval": null,
+      "index_within_provider": 1
+    }
+  ],
+  "api_key_roles": [
+    {
+      "name": "Antigravity",
+      "is_active": 1,
+      "model_access_mode": "all",
+      "allowed_models": [],
+      "allowed_combos": [
+        "combo/*"
+      ],
+      "blocked_models": [],
+      "compression_enabled": 0,
+      "disable_non_public_models": 0,
+      "last_used_at": "2026-10-19T08:33:00.711Z"
+    },
+    {
+      "name": "CLI Auto-Key",
+      "is_active": 1,
+      "model_access_mode": "all",
+      "allowed_models": [],
+      "allowed_combos": [
+        "combo/*"
+      ],
+      "blocked_models": [],
+      "compression_enabled": 1,
+      "disable_non_public_models": 0,
+      "last_used_at": "2026-10-03T17:27:38.444Z"
+    },
+    {
+      "name": "CodeMap - Semantic Architecture & Visual Intelligence",
+      "is_active": 1,
+      "model_access_mode": "restricted",
+      "allowed_models": [
+        "auto/coding:free",
+        "auto/coding",
+        "auto/best-coding",
+        "auto/reasoning",
+        "auto/vision",
+        "auto/coding:reliable"
+      ],
+      "allowed_combos": [],
+      "blocked_models": [],
+      "compression_enabled": 0,
+      "disable_non_public_models": 0,
+      "last_used_at": null
+    },
+    {
+      "name": "Voice-Assistant",
+      "is_active": 1,
+      "model_access_mode": "restricted",
+      "allowed_models": [
+        "obsidian-voice",
+        "gemini-3-flash-preview",
+        "gemini/gemini-3-flash-preview",
+        "gemini-2.5-flash",
+        "gemini/gemini-2.5-flash",
+        "gemini-3.1-flash-lite",
+        "gemini/gemini-3.1-flash-lite",
+        "gemini-2.5-flash-lite",
+        "gemini/gemini-2.5-flash-lite"
+      ],
+      "allowed_combos": [
+        "obsidian-voice"
+      ],
+      "blocked_models": [],
+      "compression_enabled": 0,
+      "disable_non_public_models": 0,
+      "last_used_at": null
+    },
+    {
+      "name": "Voice-PC-Agent",
+      "is_active": 1,
+      "model_access_mode": "restricted",
+      "allowed_models": [
+        "auto/chat:free",
+        "auto/chat",
+        "auto/fast",
+        "auto/reasoning",
+        "auto/vision",
+        "auto/multimodal"
+      ],
+      "allowed_combos": [],
+      "blocked_models": [],
+      "compression_enabled": 0,
+      "disable_non_public_models": 0,
+      "last_used_at": null
+    }
+  ],
+  "saved_combos": [
+    {
+      "name": "auto",
+      "strategy": "fallback",
+      "targets": [
+        {
+          "kind": "model",
+          "provider": "gemini",
+          "model": "gemini-2.5-flash"
+        },
+        {
+          "kind": "model",
+          "provider": "sambanova",
+          "model": "Meta-Llama-3.3-70B-Instruct"
+        },
+        {
+          "kind": "model",
+          "provider": "cloudflare-ai",
+          "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+        },
+        {
+          "kind": "model",
+          "provider": "sambanova",
+          "model": "DeepSeek-V3.2"
+        },
+        {
+          "kind": "model",
+          "provider": "agy",
+          "model": "gemini-3.7-flash-tiered"
+        }
+      ]
+    },
+    {
+      "name": "frontier-free",
+      "strategy": "fallback",
+      "targets": [
+        {
+          "kind": "model",
+          "provider": "gemini",
+          "model": "gemini-2.5-pro"
+        },
+        {
+          "kind": "model",
+          "provider": "gemini",
+          "model": "gemini-2.5-flash"
+        },
+        {
+          "kind": "model",
+          "provider": "sambanova",
+          "model": "Meta-Llama-3.3-70B-Instruct"
+        },
+        {
+          "kind": "model",
+          "provider": "sambanova",
+          "model": "gpt-oss-120b"
+        },
+        {
+          "kind": "model",
+          "provider": "huggingchat",
+          "model": "deepseek-ai/DeepSeek-V4-Pro"
+        }
+      ]
+    },
+    {
+      "name": "code-free",
+      "strategy": "fallback",
+      "targets": [
+        {
+          "kind": "model",
+          "provider": "cloudflare-ai",
+          "model": "@cf/qwen/qwen2.5-coder-32b-instruct"
+        },
+        {
+          "kind": "model",
+          "provider": "sambanova",
+          "model": "Meta-Llama-3.3-70B-Instruct"
+        },
+        {
+          "kind": "model",
+          "provider": "gemini",
+          "model": "gemini-2.5-flash"
+        },
+        {
+          "kind": "model",
+          "provider": "nvidia",
+          "model": "deepseek-ai/deepseek-coder-6.7b-instruct"
+        }
+      ]
+    },
+    {
+      "name": "fast-free",
+      "strategy": "round-robin",
+      "targets": [
+        {
+          "kind": "model",
+          "provider": "sambanova",
+          "model": "Meta-Llama-3.3-70B-Instruct"
+        },
+        {
+          "kind": "model",
+          "provider": "cloudflare-ai",
+          "model": "@cf/meta/llama-3.2-3b-instruct"
+        },
+        {
+          "kind": "model",
+          "provider": "gemini",
+          "model": "gemini-2.5-flash"
+        }
+      ]
+    },
+    {
+      "name": "vision-free",
+      "strategy": "fallback",
+      "targets": [
+        {
+          "kind": "model",
+          "provider": "gemini",
+          "model": "gemini-2.5-flash"
+        },
+        {
+          "kind": "model",
+          "provider": "gemini",
+          "model": "gemini-2.5-pro"
+        },
+        {
+          "kind": "model",
+          "provider": "nvidia",
+          "model": "adept/fuyu-8b"
+        }
+      ]
+    },
+    {
+      "name": "obsidian-voice",
+      "strategy": "fallback",
+      "targets": [
+        {
+          "kind": "model",
+          "provider": "gemini",
+          "model": "gemini-3-flash-preview"
+        },
+        {
+          "kind": "model",
+          "provider": "gemini",
+          "model": "gemini-2.5-flash"
+        },
+        {
+          "kind": "model",
+          "provider": "gemini",
+          "model": "gemini-3.1-flash-lite"
+        },
+        {
+          "kind": "model",
+          "provider": "gemini",
+          "model": "gemini-2.5-flash-lite"
+        }
+      ]
+    },
+    {
+      "name": "shal-vision",
+      "strategy": "priority",
+      "targets": [
+        {
+          "kind": "model",
+          "provider": null,
+          "model": "nvidia/Llama 3.2 11B Vision Instruct"
+        },
+        {
+          "kind": "model",
+          "provider": null,
+          "model": "nvidia/Llama 3.2 90B Vision Instruct"
+        }
+      ]
+    }
+  ]
+}
