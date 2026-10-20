@@ -1,6 +1,6 @@
 # OmniRoute | Ecosystem Customisation & Operations Vault
 
-**Version of reference:** OmniRoute 3.8.51 | **Baseline audited:** 2026-10-19; upgrade verified 2026-10-20 | **Documentation status:** source-verified, with pending verification clearly marked.
+**Version of reference:** OmniRoute 3.8.52 | **Baseline audited:** 2026-10-19; upgrade verified 2026-10-20 | **Documentation status:** source-verified, with pending verification clearly marked.
 
 This is the central, serially organised engineering vault for OmniRoute and its integrations with Antigravity, Obsidian/Voice Assistant, CodeMap, Voice-PC-Agent, Edge-TTS Voice Engine, and future applications. It includes operational instructions, an environment-specific private path registry, current configuration summaries, safeguards, recovery, test procedures and improvement backlog.
 

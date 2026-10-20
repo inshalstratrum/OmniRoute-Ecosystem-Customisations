@@ -1,13 +1,13 @@
 {
   "about": "Allowlisted, sanitized local OmniRoute configuration; NO credentials, IDs or private connection names",
-  "generated_utc": "2026-10-19T22:59:51+00:00",
-  "omniroute_installed_version": "3.8.51",
+  "generated_utc": "2026-10-20T02:02:20+00:00",
+  "omniroute_installed_version": "3.8.52",
   "database_location": "E: active DATA_DIR (absolute local path omitted)",
   "counts": {
     "provider_connections": 13,
     "api_keys": 5,
     "combos": 7,
-    "call_logs": 6040,
+    "call_logs": 5717,
     "compression_combos": 1,
     "auto_candidate_overrides": 0
   },
@@ -242,7 +242,7 @@
       "blocked_models": [],
       "compression_enabled": 0,
       "disable_non_public_models": 0,
-      "last_used_at": "2026-10-19T22:55:00.318Z"
+      "last_used_at": "2026-10-20T01:56:49.633Z"
     },
     {
       "name": "CLI Auto-Key",
@@ -296,7 +296,7 @@
       "blocked_models": [],
       "compression_enabled": 0,
       "disable_non_public_models": 0,
-      "last_used_at": "2026-10-19T22:55:25.170Z"
+      "last_used_at": "2026-10-20T02:00:51.591Z"
     },
     {
       "name": "Voice-PC-Agent",
